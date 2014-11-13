@@ -191,7 +191,7 @@ __interrupt void pinChange (void) {
 			TACTL = ID_3 | TASSEL_2 | MC_1 | TAIE;		// Use 1:1 presclar off MCLK and enable interrupts
 			HIGH_2_LOW; 						// Setup pin interrupr on positive edge
 		}
-	} // end switch
+	 // end switch
 
 
 	P2IFG &= ~BIT6;			// prevent immediate re-entry
@@ -209,10 +209,8 @@ __interrupt void pinChange (void) {
 #pragma vector = TIMER0_A1_VECTOR			// This is from the MSP430G2553.h file
 __interrupt void timerOverflow (void) {
 
-	initMSP430();
-
 	packetIndex = 0;
-
-	TACTL &= ~TAIFG;		//clear flag
-
+	TACTL = 0;
+	TACTL &= ~TAIFG;
+	initMSP430();
 }
