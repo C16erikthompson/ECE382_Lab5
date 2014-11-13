@@ -1,6 +1,18 @@
 ECE382_Lab5
 ===========
 
+#Day 1
+##Questions
+1)How long will it take the timer to roll over?   
+a)64.53 millisecond   
+2)How long does each timer count last?    
+a)1 microsecond   
+
+![alt test](http://i47.photobucket.com/albums/f189/erik_thompson2/lab5pic_zps2ab53bec.png)
+
+##IR Data Packets
+*New Pictures of data analyzer pending (I destroyed my phone with the pictures)
+
 | Pulse                      | Duration (ms) | Timer A counts |
 |----------------------------|---------------|----------------|
 | Start   logic 0 half-pulse | 9.062         | 8.971          |
@@ -40,3 +52,6 @@ ECE382_Lab5
 |       | 1.635                      | 0.594                       | 0.522                      |
 | Mean  | 1.6387                     | 0.5946                      | 0.5248                     |
 | StDev | 0.002968164                | 0.002244994                 | 0.003340659                |
+
+#Day 2
+##Required Functionality
