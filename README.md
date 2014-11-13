@@ -106,6 +106,10 @@ __interrupt void pinChange (void) {
 ~~~
 
 ##A Functionality
+###Hardware
+![alt test](http://i47.photobucket.com/albums/f189/erik_thompson2/IMG_20141112_232831_476_zps3b39dd07.jpg)
+
+###Program
 Going from required to A functionality was a fairly easy process.  For my functionality, I did the etch-a-sketch program.  To do this, I used the .asm file from lab 4 and the code of the lab 4 main.c as the backbone for this program.  In place of the buttons, I used the IR classificaitons of the 1, 2, 3, and 0 buttons for left, up, right, and down respectively.  I also used the power button to toggle the color of the drawing cursor.  In addition to these minor changes, a block of code was included before the button reads that determines the IR signal passed to the reciever.  It does this by shifting in a one or a zero to an irpacket depending upon the current state of an array.  The code for this functionality is shown below.
 
 ~~~
@@ -170,6 +174,9 @@ if(packetIndex == 34){		//if full signal recieved
 
 #Debugging
 When I initially completed the A functionality, I had an issue where moving the the cursor around the screen would leave "residual pixels" randomly about the screen.  Though I did eventually fix this issue, I am somewhat uncertain of what fixed it as I was just tinkering with my code and it eventually worked...  Though not an issue, my original iteration of the code made use of a number of global variables that were utilized as flags to check the status of the system.  Upon further review of the code, many of these flags were found to be redundant and my code was made much cleaner and concise.
+
+#Functionality
+I had my functionality checked by Dr.Coulston on Nov. 10.
 
 #Documentation
 C2C Terragnoli assisted me with understanding the logic ones and zeroes on the digital analyzer   
